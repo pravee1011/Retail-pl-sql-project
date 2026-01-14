@@ -1,6 +1,6 @@
 # Retail PL/SQL Project
 
-A simple, senior-level Oracle PL/SQL project for retail:
+Oracle PL/SQL project for retail:
 - Packages, procedures, functions
 - Bulk collect, collections, records
 - Triggers
