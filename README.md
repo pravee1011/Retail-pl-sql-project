@@ -29,3 +29,19 @@ EXEC retail_pkg.add_customer('John','john@example.com','9876543210');
 EXEC retail_pkg.record_sale(1,1,2);
 EXEC retail_pkg.process_bulk_sales(SYS.ODCIVARCHAR2LIST('1:2','2:1'));
 EXEC retail_pkg.sales_report;
+
+Retail-Management-System-PLSQL/
+│
+├── README.md
+├── sql/
+│   ├── tables.sql             -- Table creation scripts
+│   ├── sequences.sql          -- Sequence creation scripts
+│   ├── retail_pkg_spec.sql    -- Package specification
+│   └── retail_pkg_body.sql    -- Package body
+│
+├── sample-data/
+│   └── sample_execution.sql   -- Optional demo insert scripts
+│
+└── docs/
+    └── project-explanation.md -- Optional detailed documentation
+
