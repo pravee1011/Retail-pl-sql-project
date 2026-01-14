@@ -1,14 +1,31 @@
-# Retail PL/SQL Project
+# Retail Management System – Oracle PL/SQL
 
-Oracle PL/SQL project for retail:
-- Packages, procedures, functions
-- Bulk collect, collections, records
-- Triggers
-- Demo script
+A database-driven Retail Management System built using **Oracle PL/SQL**, demonstrating real-world business logic implementation with enterprise-level database programming concepts.
 
-## How to run
-1. Run `create_tables.sql`
-2. Run `insert_data.sql`
-3. Compile `retail_pkg.sql`
-4. Compile `triggers.sql`
-5. In your SQL tool, run:
+## Project Overview
+This project simulates core retail operations such as product management, customer management, and sales processing.  
+All business logic is implemented using **PL/SQL packages**, ensuring modular, reusable, and performance-optimized code.
+
+## Key PL/SQL Concepts Used
+- Packages (Specification and Body)
+- Stored Procedures
+- Functions
+- Sequences for primary key generation
+- Collections and Records
+- BULK COLLECT for performance optimization
+- String processing and loop-based data handling
+
+## Core Features
+- Add and manage products
+- Register customers
+- Record sales and calculate billing
+- Process bulk sales using collections
+- Generate sales reports using BULK COLLECT
+
+## Sample Execution
+```sql
+EXEC retail_pkg.add_product('Laptop','Electronics',60000,10);
+EXEC retail_pkg.add_customer('John','john@example.com','9876543210');
+EXEC retail_pkg.record_sale(1,1,2);
+EXEC retail_pkg.process_bulk_sales(SYS.ODCIVARCHAR2LIST('1:2','2:1'));
+EXEC retail_pkg.sales_report;
