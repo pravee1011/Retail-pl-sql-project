@@ -23,13 +23,15 @@ All business logic is implemented using **PL/SQL packages**, ensuring modular, r
 - Generate sales reports using BULK COLLECT
 
 ## Sample Execution
-```sql
+```
 EXEC retail_pkg.add_product('Laptop','Electronics',60000,10);
 EXEC retail_pkg.add_customer('John','john@example.com','9876543210');
 EXEC retail_pkg.record_sale(1,1,2);
 EXEC retail_pkg.process_bulk_sales(SYS.ODCIVARCHAR2LIST('1:2','2:1'));
 EXEC retail_pkg.sales_report;
+```
 
+## Project structure
 Retail-Management-System-PLSQL/
 │
 ├── README.md
@@ -45,3 +47,6 @@ Retail-Management-System-PLSQL/
 └── docs/
     └── project-explanation.md -- Optional detailed documentation
 
+## Author
+Praveena G
+Oracle PL/SQL Developer
